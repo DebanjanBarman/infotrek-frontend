@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="gradient.js"></script>
+</head>
+<body>
+<div class="hero">
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">LOGO</div>
+            <ul class="navigation-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">About</a></li>
+                <li><a class="btn" href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <canvas id="canvas"></canvas>
+    <div class="grid">
+        <div class="text">
+            <h1 class="hero-text">INFOTREK <br>2024</h1>
+            <a href="#" class="btn btn--main">Participate</a>
+
+        </div>
+        <div class="side-images">
+            <img class="static-img" src="images/mountain2.png" alt="Mountain">
+            <img class="card-svg" src="images/boy.png" alt="Image">
+        </div>
+    </div>
+</div>
+
+<script>
+    var gradient = new Gradient();
+    gradient.initGradient("#canvas");
+
+</script>
+</body>
+</html>
