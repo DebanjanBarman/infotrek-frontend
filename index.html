@@ -1,43 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="gradient.js"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="icon" href="img/favicon.png"/>
+    <link rel="apple-touch-icon" href="img/asd.png"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/queries.css"/>
+    <link rel="stylesheet" href="css/animation.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script src="js/gradient.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <title>INFOTREK &mdash; 2024</title>
 </head>
 <body>
-<div class="hero">
-    <header class="header">
-        <nav class="nav">
-            <div class="logo">LOGO</div>
-            <ul class="navigation-link">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">About</a></li>
-                <li><a class="btn" href="#">Sign In</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="gradient">
     <canvas id="canvas"></canvas>
-    <div class="grid">
-        <div class="text">
-            <h1 class="hero-text">INFOTREK <br>2024</h1>
-            <a href="#" class="btn btn--main">Participate</a>
-
-        </div>
-        <div class="side-images">
-            <img class="static-img" src="images/mountain2.png" alt="Mountain">
-            <img class="card-svg" src="images/boy.png" alt="Image">
-        </div>
-    </div>
 </div>
 
+<header class="header">
+    <h2>INFOTREK <br>LOGO here</h2>
+    <a href="#">
+        <!--        <img class="logo" alt="INFOTREK LOGO" src="img/infotrek-logo.png"/>-->
+    </a>
+
+    <nav class="main-nav">
+        <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#events">Events</a></li>
+            <li><a class="main-nav-link" href="#team">Team</a></li>
+            <li>
+                <a class="main-nav-link" href="#about">About</a>
+            </li>
+            <!--            <li><a class="main-nav-link" href="#pricing">Pricing</a></li>-->
+            <li><a class="main-nav-link btn nav-cta" href="#sign-in">Sign in</a></li>
+        </ul>
+    </nav>
+
+    <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav color--light" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+</header>
+<main>
+    <section class="section-hero">
+        <div class="hero">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">
+                    INFOTREK <br> 2024
+                </h1>
+                <a href="#cta" class="btn btn--full margin-right-sm">Participate</a>
+            </div>
+            <div class="hero-img-box">
+                <div class="side-images">
+                    <img class="static-img" src="img/mountain10.png" alt="Mountain">
+                    <img class="card-svg" src="img/boy.png" alt="Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-organizer">
+        <div class="container">
+            <h2 class="heading-organizer">Organizer</h2>
+            <div class="logos-container">
+                <div class="logos">
+                    <img src="img/logos/organizer_acm.png" alt="ACM NITT LOGO"/>
+                    <img src="img/logos/organizer_nitt.png" alt="NITT LOGO"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-events" id="events">
+        <div class="container">
+            <span class="subheading">Events</span>
+            <h2 class="heading-secondary">
+                Participate in Exciting events and win prizes
+            </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+            <!-- EVENT 01 -->
+            <div class="event-text-box">
+                <p class="event-number">01</p>
+                <h3 class="heading-tertiary">
+                    Event 01 Name
+                </h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+
+            <!-- EVENT 02 -->
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+            <div class="event-text-box">
+                <p class="event-number">02</p>
+                <h3 class="heading-tertiary"> Event 02 Name</h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+
+            <!-- EVENT 03 -->
+            <div class="event-text-box">
+                <p class="event-number">03</p>
+                <h3 class="heading-tertiary"> Event 03 Name</h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+
+            <!-- EVENT 04 -->
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+            <div class="event-text-box">
+                <p class="event-number">04</p>
+                <h3 class="heading-tertiary">
+                    Event 04 Name
+                </h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+
+            <!-- EVENT 05 -->
+            <div class="event-text-box">
+                <p class="event-number">05</p>
+                <h3 class="heading-tertiary"> Event 05 Name</h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+
+            <!-- EVENT 06 -->
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+            <div class="event-text-box">
+                <p class="event-number">06</p>
+                <h3 class="heading-tertiary"> Event 06 Name</h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+
+            <!-- EVENT 07 -->
+            <div class="event-text-box">
+                <p class="event-number">07</p>
+                <h3 class="heading-tertiary">
+                    Event 07 Name
+                </h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+
+            <!-- EVENT 08 -->
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+            <div class="event-text-box">
+                <p class="event-number">08</p>
+                <h3 class="heading-tertiary"> Event 08 Name</h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+
+            <!-- EVENT 09 -->
+            <div class="event-text-box">
+                <p class="event-number">09</p>
+                <h3 class="heading-tertiary"> Event 09 Name</h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+
+            <!-- EVENT 10 -->
+            <div class="events-img-box">
+                <img
+                        src="img/events/event1.jpg"
+                        class="event-img"
+                        alt="Event logo"
+                />
+            </div>
+            <div class="event-text-box">
+                <p class="event-number">10</p>
+                <h3 class="heading-tertiary"> Event 10 Name</h3>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus in minus obcaecati quisquam
+                    tempora tenetur veritatis! A assumenda cupiditate rem?
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container grid grid--footer">
+        <div class="logo-col">
+            <a href="#" class="footer-logo">
+                <!--                <img class="logo" alt="INFOTREK logo" src="img/infotrek-logo.png"/>-->
+                <h2 class="btn">INFOTREK<br>LOGO&nbsp;here</h2>
+
+            </a>
+            <ul class="social-links">
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-link" href="#">
+                        <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+            <p class="copyright">
+                Copyright &copy; <span class="year">2027</span> by ACM NIT Trichy, All rights reserved.
+            </p>
+        </div>
+
+        <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+                <p class="address">
+                    Room no 30, 2nd Floor, Diamond Hostel, NIT Trichy,Tamil Nadu, 234323
+                </p>
+                <p>
+                    <a class="footer-link" href="tel:415-201-6370">+91-1234599828</a><br/>
+                    <a class="footer-link" href="mailto:hello@acmnitt.org">hello@acmnitt.org</a>
+                </p>
+            </address>
+        </div>
+
+        <nav class="nav-col">
+            <p class="footer-heading">Account</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Create account</a></li>
+                <li><a class="footer-link" href="#">Sign in</a></li>
+            </ul>
+        </nav>
+
+        <nav class="nav-col">
+            <p class="footer-heading">Links</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">Events</a></li>
+                <li><a class="footer-link" href="#">About</a></li>
+                <li><a class="footer-link" href="#">Teams</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
 <script>
     var gradient = new Gradient();
     gradient.initGradient("#canvas");
-
 </script>
+
 </body>
+
 </html>

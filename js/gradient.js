@@ -1,5 +1,5 @@
 /*
- *   https://codepen.io/kevinhufnagl/pen/YzwBemd bu adresten alındı.
+ *   https://codepen.io/kevinhufnagl/pen/YzwBemd bu adresten alÄ±ndÄ±.
  *   Stripe WebGl Gradient Animation
  *   ScrollObserver functionality to disable animation when not scrolled into view has been disabled and
  *   commented out for now.
@@ -37,8 +37,8 @@ class MiniGl {
                         function getShaderByType(type, source) {
                             const shader = context.createShader(type);
                             return (context.shaderSource(shader, source), context.compileShader(shader), context.getShaderParameter(shader, context.COMPILE_STATUS) || console.error(context.getShaderInfoLog(shader)), _miniGl.debug("Material.compileShaderSource", {
-                                    source: source
-                                }), shader);
+                                source: source
+                            }), shader);
                         }
 
                         function getUniformVariableDeclarations(uniforms, type) {
@@ -90,10 +90,10 @@ class MiniGl {
                                 let name_no_prefix = name.replace("u_", "");
                                 return ((name_no_prefix = name_no_prefix.charAt(0).toUpperCase() + name_no_prefix.slice(1)), `uniform struct ${name_no_prefix} 
                                   {\n` + Object.entries(uniform.value)
-                                        .map(([name, uniform]) => uniform
-                                            .getDeclaration(name, type)
-                                            .replace(/^uniform/, ""))
-                                        .join("") + `\n} ${name}${length > 0 ? `[${length}]` : ""};`);
+                                    .map(([name, uniform]) => uniform
+                                        .getDeclaration(name, type)
+                                        .replace(/^uniform/, ""))
+                                    .join("") + `\n} ${name}${length > 0 ? `[${length}]` : ""};`);
                             }
                             return `uniform ${uniform.type} ${name}${length > 0 ? `[${length}]` : ""};`;
                         }
@@ -228,8 +228,8 @@ class MiniGl {
 //Sets initial properties
 function e(object, propertyName, val) {
     return (propertyName in object ? Object.defineProperty(object, propertyName, {
-            value: val, enumerable: !0, configurable: !0, writable: !0
-        }) : (object[propertyName] = val), object);
+        value: val, enumerable: !0, configurable: !0, writable: !0
+    }) : (object[propertyName] = val), object);
 }
 
 //Gradient object
