@@ -15,7 +15,10 @@
 }
 
 .logo {
-    height: 2.2rem;
+    /*height: 2.2rem;*/
+    height: 6.2rem;
+    width: 11.2rem;
+
 }
 
 /**************************/
@@ -237,9 +240,11 @@
     cursor: pointer;
 
 }
-.btn-register:hover,.btn-register:active{
+
+.btn-register:hover, .btn-register:active {
     background-color: #7950f2;
 }
+
 .events-img-box {
     position: relative;
 
